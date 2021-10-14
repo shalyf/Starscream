@@ -52,7 +52,7 @@ class ViewController: UIViewController, WebSocketDelegate {
     }
     
     // MARK: - WebSocketDelegate
-    func didReceive(event: WebSocketEvent, client: WebSocket) {
+    func didReceive(event: WebSocketEvent, client: WebSocketClient) {
         switch event {
         case .connected(let headers):
             isConnected = true
